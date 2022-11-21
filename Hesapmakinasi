@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Hesapmakinasi {
+	public static void main(String[] args) {
+		int z1,z2,select;
+		Scanner k = new Scanner(System.in);
+		System.out.print("Ilk sayiyi giriniz :");
+		z1 = k.nextInt();
+		System.out.print("Ikinci sayiyi giriniz :");
+		z2 = k.nextInt();
+		
+		System.out.print("1-Toplama\n2-Cikarma\n3-Carpma\n4-Bolme");
+		System.out.println("\nSecim yapiniz.");
+		
+		select = k.nextInt();
+		
+		switch(select) {
+		case 1:
+			System.out.println("Toplaminiz :" + (z1+z2));
+			break;
+		case 2:
+			System.out.println("Çikarma : " + (z1-z2));
+			break;
+		case 3:
+			System.out.println("Carpiminiz : " + (z1*z2));
+			break;
+		case 4:
+			if (0!=z2) {
+				System.out.println("Bolumunuz : " + (z1/z2));
+			}else
+				System.out.println("BIR SAYI 0'A BOLUNEMEZ.");
+			break;
+		default:
+			System.out.println("Yanlis girdiniz.Tekrar deneyiniz...");
+			
+			
+			
+		}
+		
+
+	}
+
+}
