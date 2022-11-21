@@ -1,1 +1,37 @@
+import java.util.Scanner;
+
+public class DersOrt {
+
+	public static void main(String[] args) {
+			int mat,fiz,kim,tur,muz;
+			Scanner k =new Scanner(System.in);
+			
+			System.out.println("Mat :");
+			mat = k.nextInt();
+			System.out.println("Fiz :");
+			fiz = k.nextInt();
+			System.out.println("Kim :");
+			kim = k.nextInt();
+			System.out.println("Tur :");
+			tur = k.nextInt();
+			System.out.println("Muz :");
+			muz = k.nextInt();
+			
+			double ort = (mat+fiz+kim+tur+muz)/5;
+			if((mat<101 && mat>=0)&&(fiz<101&&fiz>=0)&&(kim<101&&kim>=0)&&(tur<101&&tur>=0)&&(muz<101&&muz>=0)) {
+				if (ort>=55) {
+					System.out.println("GECTIN SINIFI");
+				}else {
+					System.out.println("KALDIN SINIFTA");
+					
+				}
+					
+			}else {
+				System.out.println("Not Ortalaman :" + ort);
+			}
+			
+
+	}
+
+}
 
